@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="background-image">
+            <img src="imgs/Logo.png" alt="Logo" class="logo">
+            <h1>Víctor Ávalos Calvache</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#galeria-proyectos">Galería de proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <div class="bio-card">
+            <p>Hola, soy Víctor Ávalos, un apasionado de el mundo de la informática. He estudiado un grado medio de Sistemas Microinformáticos y Redes<!-- y he trabajado en [tu experiencia laboral]-->, no tengo experiencia laboral, no obstante estoy deseando empezar. Me encanta la programación web, el montaje de ordenadores y tengo muchas ganas de expandr mis conocimientos.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <img src="imgs/icono-facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <img src="imgs/icono-twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                    <img src="imgs/icono-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <img src="imgs/icono-instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería de Proyectos -->
+    <section id="galeria-proyectos">
+        <h2>Galería de Proyectos</h2>
+
+        <!-- Comentar cuando haya proyectos -->
+        
+        <div class="project-card">
+            <h3><br>No tengo proyectos hechos, pero sí muchas ganas de ser participe de ellos<br>‎</h3>
+        </div>
+
+        <!-- Descomentar para agregar proyectos -->
+        <!--
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="ruta/a/proyecto1.jpg" alt="Proyecto 1">
+                <h3>Título del Proyecto 1</h3>
+                <p>Descripción breve del Proyecto 1. Aquí puedes incluir información sobre el propósito y las tecnologías utilizadas.</p>
+            </div>
+            <div class="project-card">
+                <img src="ruta/a/proyecto2.jpg" alt="Proyecto 2">
+                <h3>Título del Proyecto 2</h3>
+                <p>Descripción breve del Proyecto 2. Aquí puedes incluir información sobre el propósito y las tecnologías utilizadas.</p>
+            </div>
+            <div class="project-card">
+                <img src="ruta/a/proyecto3.jpg" alt="Proyecto 3">
+                <h3>Título del Proyecto 3</h3>
+                <p>Descripción breve del Proyecto 3. Aquí puedes incluir información sobre el propósito y las tecnologías utilizadas.</p>
+            </div>
+            <div class="project-card">
+                <img src="ruta/a/proyecto4.jpg" alt="Proyecto 4">
+                <h3>Título del Proyecto 4</h3>
+                <p>Descripción breve del Proyecto 4. Aquí puedes incluir información sobre el propósito y las tecnologías utilizadas.</p>
+            </div>
+            <div class="project-card">
+                <img src="ruta/a/proyecto5.jpg" alt="Proyecto 5">
+                <h3>Título del Proyecto 5</h3>
+                <p>Descripción breve del Proyecto 5. Aquí puedes incluir información sobre el propósito y las tecnologías utilizadas.</p>
+            </div>
+            <div class="project-card">
+                <img src="ruta/a/proyecto6.jpg" alt="Proyecto 6">
+                <h3>Título del Proyecto 6</h3>
+                <p>Descripción breve del Proyecto 6. Aquí puedes incluir información sobre el propósito y las tecnologías utilizadas.</p>
+            </div>
+        </div>
+        -->
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades y Conocimientos</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Conocimiento sólido en HTML5, estructurando contenido para la web.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Experiencia en CSS3, creando estilos atractivos y responsivos.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Conocimientos en JavaScript, desarrollando interactividad en aplicaciones web.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <h2>Formulario de Contacto</h2>
+        <form id="contact-form" action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección del pie de página -->
+    <footer id="footer">
+        <!-- Texto del pie de página -->
+        <p>© 2024 Víctor Ávalos</p>
+    </footer>
+
+    <script>
+        // Función para ocultar el aviso de cookies
+        let cookieNotice = document.getElementById('cookie-notice');
+        let acceptCookies = document.getElementById('accept-cookies');
+
+        acceptCookies.onclick = function() {
+            cookieNotice.style.display = 'none';
+        };
+
+        let inactivityTime = function () {
+            let timer;
+            window.onload = resetTimer;
+            window.onmousemove = resetTimer;
+            window.onkeypress = resetTimer;
+
+            function logout() {
+                cookieNotice.style.display = 'none';
+            }
+
+            function resetTimer() {
+                clearTimeout(timer);
+                timer = setTimeout(logout, 5000);  // 5 segundos de inactividad
+            }
+        };
+
+        inactivityTime();
+    </script>
+
+</body>
+</html>
