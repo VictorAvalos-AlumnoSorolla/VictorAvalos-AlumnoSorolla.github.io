@@ -1,0 +1,234 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#theme-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav {
+    background-color: #444;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    display: none;
+}
+
+.card.active {
+    display: block;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill-card, .education-card, .experience-card, .knowledge-card {
+    background-color: #f9f9f9;
+    padding: 1.25rem; /* Aumentar el padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(45% - 1rem); /* Aumentar el ancho */
+    transition: transform 0.2s;
+    font-size: 1rem; /* Aumentar el tamaño de la fuente */
+}
+
+.skill-card h3, .education-card h3, .experience-card h3, .knowledge-card h3 {
+    font-size: 1.1rem; /* Aumentar el tamaño de fuente para títulos */
+    margin-bottom: 0.75rem; /* Aumentar el margen inferior */
+}
+
+.skill-card p, .education-card p, .experience-card p, .knowledge-card p {
+    margin: 0.5rem 0; /* Aumentar el margen entre párrafos */
+}
+
+.skill-card:hover, .education-card:hover, .experience-card:hover, .knowledge-card:hover {
+    transform: translateY(-5px);
+}
+
+.progress-bar {
+    background-color: #e0e0e0; /* Color de fondo de la barra */
+    border-radius: 8px;
+    overflow: hidden;
+    height: 15px; /* Aumenté el grosor de la barra (antes era 10px) */
+    margin: 0.5rem 0;
+}
+
+.progress {
+    background-color: #4caf50; /* Cambié el color de la barra de progreso a verde */
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.3s ease;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
+
+/* Estilos para los botones de contacto */
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.contact-button {
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 0.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-button i {
+    font-size: 1.5rem;
+}
+
+.contact-button:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode nav {
+    background-color: #222;
+}
+
+body.dark-mode .card {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+body.dark-mode .skill-card, 
+body.dark-mode .education-card, 
+body.dark-mode .experience-card, 
+body.dark-mode .knowledge-card {
+    background-color: #555;
+    color: #f4f4f4;
+}
+
+body.dark-mode .progress-bar {
+    background-color: #666;
+}
+
+body.dark-mode .progress {
+    background-color: #81c784; /* Verde más claro para el modo oscuro */
+}
+
+body.dark-mode .contact-button {
+    background-color: #555;
+    color: #f4f4f4;
+}
+
+body.dark-mode .contact-button:hover {
+    background-color: #666;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
