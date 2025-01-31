@@ -1,5 +1,19 @@
 /* Estilos generales */
+/* Asegurar que todos los elementos usen box-sizing: border-box */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Evitar desbordamiento horizontal en el body */
 body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -30,6 +44,10 @@ header h1 {
     font-size: 1.5rem;
     cursor: pointer;
     color: #fff;
+}
+
+.main-content {
+    flex: 1; /* Ocupa todo el espacio disponible */
 }
 
 nav {
@@ -126,32 +144,24 @@ main {
     transition: width 0.3s ease;
 }
 
+/* Asegurar que el footer no exceda el ancho de la ventana */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
 }
 
-footer p {
-    margin: 0.5rem 0;
+/* Estilos para los hipervínculos en el footer */
+footer a {
+    color: white; /* Color blanco para los enlaces */
+    text-decoration: none; /* Opcional: quitar el subrayado */
 }
 
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-body.dark-mode footer {
-    background-color: #222;
+footer a:hover {
+    text-decoration: underline; /* Opcional: subrayar al pasar el mouse */
 }
 
 /* Estilos para los botones de contacto */
