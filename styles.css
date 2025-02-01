@@ -19,32 +19,14 @@ html {
         font-size: 1.5rem;
     }
 
-    /* Convertir el menú en una barra lateral desplazable */
-    nav {
-        overflow-x: auto; /* Permitir desplazamiento horizontal */
-        white-space: nowrap; /* Evitar saltos de línea */
-        padding: 0.5rem 0;
-    }
-
+    /* Ajustar el menú de navegación */
     nav ul {
-        flex-direction: row; /* Mantener los elementos en fila */
+        flex-direction: column; /* Apilar elementos verticalmente */
         gap: 0.5rem;
-        padding: 0 0.5rem; /* Añadir padding para evitar que los elementos toquen los bordes */
-    }
-
-    nav ul li {
-        display: inline-block; /* Mostrar los elementos en línea */
     }
 
     nav ul li a {
         font-size: 0.9rem;
-        padding: 0.5rem 1rem; /* Añadir padding para mejor tacto */
-        background-color: #555; /* Fondo para los botones */
-        border-radius: 4px; /* Bordes redondeados */
-    }
-
-    nav ul li a:hover {
-        background-color: #777; /* Cambiar color al pasar el mouse */
     }
 
     /* Ajustar las tarjetas */
@@ -69,22 +51,17 @@ html {
 }
 
 /* Evitar desbordamiento horizontal en el body */
-/* Hacer que el body sea un contenedor flexible */
 body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ocupar al menos el 100% de la altura de la ventana */
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
-}
-
-/* Hacer que el contenido principal ocupe el espacio restante */
-.main-content {
-    flex: 1; /* Ocupar todo el espacio disponible */
 }
 
 header {
