@@ -8,18 +8,83 @@ html {
     box-sizing: inherit;
 }
 
+/* Estilos generales para móviles */
+@media (max-width: 768px) {
+    /* Ajustar el header */
+    header {
+        padding: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Convertir el menú en una barra lateral desplazable */
+    nav {
+        overflow-x: auto; /* Permitir desplazamiento horizontal */
+        white-space: nowrap; /* Evitar saltos de línea */
+        padding: 0.5rem 0;
+    }
+
+    nav ul {
+        flex-direction: row; /* Mantener los elementos en fila */
+        gap: 0.5rem;
+        padding: 0 0.5rem; /* Añadir padding para evitar que los elementos toquen los bordes */
+    }
+
+    nav ul li {
+        display: inline-block; /* Mostrar los elementos en línea */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem; /* Añadir padding para mejor tacto */
+        background-color: #555; /* Fondo para los botones */
+        border-radius: 4px; /* Bordes redondeados */
+    }
+
+    nav ul li a:hover {
+        background-color: #777; /* Cambiar color al pasar el mouse */
+    }
+
+    /* Ajustar las tarjetas */
+    .card {
+        padding: 1rem;
+    }
+
+    .skill-card, .education-card, .experience-card, .knowledge-card {
+        width: 100%; /* Ocupar todo el ancho en móviles */
+    }
+
+    /* Ajustar el footer */
+    footer {
+        padding: 0.5rem;
+        position: static; /* Asegurar que el footer no flote */
+        margin-top: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
 /* Evitar desbordamiento horizontal en el body */
+/* Hacer que el body sea un contenedor flexible */
 body {
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Ocupar al menos el 100% de la altura de la ventana */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hacer que el contenido principal ocupe el espacio restante */
+.main-content {
+    flex: 1; /* Ocupar todo el espacio disponible */
 }
 
 header {
@@ -145,13 +210,15 @@ main {
 }
 
 /* Asegurar que el footer no exceda el ancho de la ventana */
+/* Estilos para el footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
     width: 100%;
-    box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
+    position: static; /* Eliminar position: fixed */
+    margin-top: auto; /* Empujar el footer hacia abajo */
 }
 
 /* Estilos para los hipervínculos en el footer */
